@@ -1,0 +1,250 @@
+{% load static %}
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+*{
+	margin:0;
+	padding:0;
+	box-shadow:border-box;
+
+}
+body{
+	/*background:#0d0d0d;*/
+	overflow-x:hidden;
+	 background-image:
+    linear-gradient(
+      to right, 
+      #3B3B3B, 
+      #E1E0E0, 
+      #68707F, 
+      #3B3B3B
+    );
+ }
+
+.nav-edit{
+	background:#5651b0;
+}
+
+li{
+	margin-left:10px;
+}
+ul{
+	margin-right:1em;
+}
+li a {
+display: block;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-family: 'Source Sans Pro', sans-serif;
+border-radius:10px;
+font-size:18px;
+}
+
+.nav-link{
+	color:white;
+}
+
+li a:hover {
+	border-bottom:2px solid #D73F3F;
+	border-top:2px solid #D73F3F;
+	color:white;
+
+}
+
+.content-container{
+	margin: 45px auto;
+}
+
+
+.content-jumbo  {
+  background:none;
+  justify-content: left;
+}
+.contactdetail h4{
+  font-size: 1.3em;
+  padding-bottom: none;
+  color:black;
+  font-family: serif;
+}
+.contactdetail p{
+  color: #827e7e;
+   font-size: 1em;
+   color:#650F63;
+ font-family: sans-serif;;
+}
+
+.inner-content{
+	padding-top:40px;
+	margin:0px 10px 0px 10px;
+}
+.img-jumbo{
+	background:none;
+}
+.myimg{
+	width:600px;
+	height:600px;
+	border:none;
+	margin:25px 0px 10px 0px;
+
+}
+.grad {
+
+  background: linear-gradient(45deg, deeppink 50%, transparent 50%);
+  filter: drop-shadow(0.6rem 0.6rem 1rem rgba(20, 20, 180, 0.8));
+}
+
+.name-text{
+	font-size:80px;
+	font-weight: bold;
+}
+.job-title{
+	font-size:20px;
+	font-weight: bold;
+	color: #00784b;
+}
+.editbtn{
+	font-size:15px;
+	font-weight: normal;
+	padding: 10px 10px 10px 10px;
+	margin: 15px 10px 0px 0px;
+	background-color:#A1249E;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: white;
+  margin: 5px;
+  transition: 1s;
+}
+.social-btn i{
+  font-size: 30px;
+}
+.social-btn:hover {
+  width: 70px;
+  border-radius: 5px;
+  border: 2px solid Black;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-links {
+  display:flex;
+  margin-top:50px;
+}
+.contactpara{
+    color: #244C9E;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+hr{
+  border-top: 1px dashed #44c7f4;
+}
+
+/***aboutpage***/
+.card-text{
+ 	margin:0px 45px 0px 0px;
+ 	font-family: serif;
+ 	font-size:20px;
+}
+.main-text{
+	font-family: system-ui;
+	font-size:30px;
+	font-weight:bold;
+}
+.card-title{
+	font-family: serif;
+	font-size:20px;
+}
+
+.education-year {
+    float: left;
+    width: 30%;
+    border-left: 5px solid #eb5424;
+    padding-left: 14px;
+    margin-left:5px;
+    font-family: serif;
+}
+.education-info {
+    float: right;
+    width: 69%;
+}
+.education-bor {
+    padding: 1em 4em 1em 4em;
+    background: #f3f2f2;
+}
+.education-info h4 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 2px;
+}
+.education-year h6 {
+    color: #44c7f4;
+    text-transform: uppercase;
+    letter-spacing:2px;
+  font-style:italic;
+  font-size:1em;
+   font-family: 'Titillium Web', sans-serif;
+}
+.education-info p {
+    font-size: 0.9em;
+    line-height: 1.9em;
+    color: #777;
+    margin-top: 10px;
+     font-family: sans-serif;
+}
+.education-div {
+    margin: 1em 0;
+    padding: 1em 0;
+    border-bottom: 1px solid Black;
+}
+
+ /* Media Query for Mobile Devices */
+        @media (max-width: 480px) {
+            .myimg {
+                width:450px;
+                height:450px;
+            }
+            .name-text{
+            	font-size:60px;
+            }
+            .job-title{
+            	font-size:15px;
+            }
+        }
+          
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 767px) {
+            .myimg {
+                width:500px;
+                height:500px;
+            }
+            .name-text{
+            	font-size:70px;
+            }
+            .job-title{
+            	font-size:17px;
+            }
+        }
+          
+        /* Media Query for Tablets Ipads portrait mode */
+        @media (min-width: 768px) and (max-width: 1024px){
+            .myimg {
+                 width:600px;
+                 height:600px;
+            }
+            .name-text{
+            	font-size:75px;
+            }
+            .job-title{
+            	font-size:18px;
+            }
+        }}

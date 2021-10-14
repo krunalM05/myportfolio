@@ -1,0 +1,77 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+<!--about part-->
+{% include 'navbar.html'%}
+<div class="container-fluid" style="margin-top:10px">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="card">
+            <div class="row no-gutters">
+                <div class="col-sm-5">
+                    <img class="card-img about-img" src="{% static 'img/about1.png' %}" alt="KrunalMoharkar">
+                </div>
+                <div class="col-sm-7">
+                    <div class="card-body text-left" style="margin-top:30px">
+                        <h3 class="main-text">About Me:</h3>
+                        <h5 class="card-title">Hi, I'm Krunal Moharkar</h5>
+                        <p class="card-text">
+                        I am a College Student and I am pursing my B-tech Education from Computer Engineering branch at Government College OF Engineering, Yavatmal. I believe in God and worship. I am always trying to improve myself every day.My focus is always on my goals. I loved to works with team members. I update myself every day with motivational thoughts, positive energy, current affairs updates and fill myself with positive attitude and confidence to becoming the best version of myself.</p>
+                        <a href="#" class="btn btn-primary editbtn">Hire Me</a>
+                        <a href="#" class="btn btn-primary editbtn">Resume</a>
+                        <a href="#" class="btn btn-primary editbtn">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+   
+</div>
+
+<div class="container-fluid" style="margin-top:10px">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+         <h2 class="main-text text-center" style="margin-top:10px;">My Education</h2>
+         <div class="education-div">
+             <div class="education-year">
+                 <h4>2019</h4>
+               <h6>1st year</h6>
+             </div>
+           <div class="education-info">
+                 <h4>Government College Of Enginnering, yavtmal</h4>
+                 <p>Passed 1st year Of Btech from Dr.Br.Ambedakar Technological University With 9.12/10</p>
+             </div>
+             <div class="clearfix"></div>
+          </div>
+          <div class="education-div two">
+             <div class="education-year">
+                 <h4>2018</h4>
+               <h6>12th</h6>
+             </div>
+           <div class="education-info">
+                 <h4>Nanaji Joshi Jr College, Shahapur.</h4>
+                 <p>Passed HSC from Maharashtra State Board Of Higher Enducation With 85.54%.</p>
+             </div>
+              <div class="clearfix"></div>
+          </div>
+          <div class="education-div">
+             <div class="education-year">
+                <h4>2016</h4>
+               <h6>10th</h6>
+             </div>
+           <div class="education-info">
+                 <h4>Mahila Samaj Madhyamik Vidyalaya, Bhandara.</h4>
+               <p>Passed SSC from Maharashtra State Board Of Secondary Enducation With 94.40%.</p>
+              
+             </div>
+              <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+{% endblock content %}

@@ -1,0 +1,63 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+{% include 'navbar.html'%}
+<!-- header Part-->
+<div class="container-fluid content-container">
+   
+    <div class="row justify-content-center">
+    <h4 class="contactpara">A few Details about me</h4>
+    </div>
+  
+ <div class="row">
+    <div class="col-md-6">
+      <div class="img-jumbo">
+          <img class="rounded grad img-thumbnail myimg" src="{% static 'img/myimg.jpg' %}" alt="KrunalMoharkar">
+        </div>
+    </div>
+    <div class="col-md-6">
+      <div class="jumbotron content-jumbo">
+          <div class="contactdetail">
+            <h4>Job Title</h4>
+            <p>Programmer / Web Developer</p>
+          </div>
+          <hr>
+          <div class="contactdetail">
+            <h4>Name</h4>
+            <p>Krunal Moharkar</p>
+          </div>
+          <hr>
+          <div class="contactdetail">
+            <h4>Sex</h4>
+            <p>Male</p>
+          </div>
+          <hr>
+          <div class="contactdetail">
+            <h4>Email Address</h4>
+            <p><a href="moharkarkrunalatul@gmail.com" style="text-decoration:none;color:#650F63">moharkarkrunalatul@gmail.com</a></p>
+          </div>
+          <hr>
+          <div class="contactdetail">
+            <h4>mobile No.</h4>
+            <p>9284586653</p>
+          </div>
+        </div>
+               <div class="social-links">
+                 <a href="https://twitter.com/KrunalMoharkar" class="social-btn flex-center" style="text-decoration: none;">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/krunal-moharkar-950834169/" class="social-btn flex-center" style="text-decoration: none;">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/krunalM05" class="social-btn flex-center" style="text-decoration: none;">
+                    <i class="fa fa-github"></i>
+                  </a>
+               </div>
+        </div>
+  </div>
+</div>
+<!-- header Part-->
+{% include 'footer.html'%}
+
+{% endblock content %}
